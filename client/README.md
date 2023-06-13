@@ -1,4 +1,10 @@
-# Getting Started with Create React App
+# To Do List, Notes App Task - 2
+
+## React js task
+Create a notes web app
+Database must be MySQL
+Should be a simple design
+Delete and add note should work and insert data inside db
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -6,7 +12,17 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `npm start`
+# TERMINAL
+Do `cd server` and `npm install` to install the necessary dependencies
+Then run command ### `npm start` to run the server
+
+# NOW OPEN ANOTHER TERMINAL
+
+Do `cd client` and `npm install` to install the necessary dependencies
+
+Then run command ### `npm start` to run the client. 
+
+AND YOU ARE GOOD TO GO
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
