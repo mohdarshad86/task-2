@@ -1,0 +1,98 @@
+body {
+  background-color: #789593;
+}
+
+header {
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: 40px auto;
+  align-items: center;
+  width: 320px;
+  background: #e6ded3;
+  border-radius: 10px;
+  padding: 10px 40px;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-bottom: 1px solid black;
+  background: none;
+}
+
+.form textarea {
+  margin-top: 8px;
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 60px;
+  max-height: 400px;
+}
+
+.form .add-note {
+  margin-left: auto;
+  padding: 8px 12px;
+  margin-top: 8px;
+  margin-right: -10px;
+  border-radius: 5px;
+  border: none;
+  background: #076d66;
+  color: white;
+}
+
+.form .show-note {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  font-size: 18px;
+  margin-left: -20px;
+  padding: 10px 0;
+}
+
+.notes {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  list-style: none;
+  align-items: start;
+  padding: 16px;
+}
+
+.note {
+  background: #e6ded3;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.note p {
+  word-wrap: break-word;
+}
+
+.note h3 {
+  margin-top: 0;
+}
+
+.note button {
+  background: none;
+  border: none;
+  margin-left: auto;
+  display: flex;
+}
+
+@media (width<800px) {
+  .notes {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
