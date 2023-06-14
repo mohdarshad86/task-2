@@ -48,7 +48,7 @@ const NoteList = ({ notes, setNotes }) => {
         <li className='note' key={note.id} >
           <h3>{note.title}</h3>
           <p>{note.content}</p>
-          <p>{dateTimeFormat(Date(note.timestamp))}</p>
+          <p>{dateTimeFormat(note.timestamp)}</p>
           <button onClick={() => deleteNote(note.id)}><span className="material-icons">
             delete
           </span></button>

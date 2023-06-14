@@ -43,7 +43,6 @@ app.post('/api/notes', (req, res) => {
   try {
     console.log('request recieved');
     const { title, content } = req.body;
-    const timestamp = new Date().toISOString();
 
     const sql = 'INSERT INTO notes (title, content) VALUES (?, ?)';
     connection.query(sql, [title, content], (error, results) => {

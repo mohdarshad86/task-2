@@ -5,9 +5,7 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-const PATHE = process.env.PATH
-
-const PATH = 'http://localhost:5000';
+var PATH = process.env.PATH || 'http://localhost:5000';
 
 const NoteForm = ({ notes, setNotes }) => {
   const [showNote, setShowNote] = useState(false)
@@ -20,7 +18,6 @@ const NoteForm = ({ notes, setNotes }) => {
     try {
       let addedNote = await axios.post(`${PATH}/api/notes`, newNote);
       console.log('Note added successfully!');
-      console.log(PATHE);
       setTitle('');
       setContent('');
       console.log(addedNote);
