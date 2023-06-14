@@ -23,3 +23,8 @@ Do `cd client` and `npm install` to install the necessary dependencies
 Then run command ### `npm start` to run the client. 
 
 AND YOU ARE GOOD TO GO
+
+### Screenshots
+
+![Alt text](<client/Screenshots/task -2 notes app home.png>)
+![Alt text](<client/Screenshots/task - 2 add notes.png>)
